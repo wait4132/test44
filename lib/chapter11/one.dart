@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class Chapter111 extends StatelessWidget {
   const Chapter111({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
