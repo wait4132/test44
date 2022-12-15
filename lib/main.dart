@@ -1,5 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:test4/chapter11/one.dart';
+import 'package:test4/chapter2/two.dart';
+import 'package:test4/chapter4/two.dart';
+import 'package:test4/chapter5/one.dart';
+import 'package:test4/chapter5/two.dart';
+import 'package:test4/chapter6/one.dart';
+import 'package:test4/chapter6/two.dart';
+import 'package:test4/chapter7/one.dart';
+import 'package:test4/chapter7/two.dart';
+import 'package:test4/chapter8/one.dart';
+import 'package:test4/chapter8/two.dart';
+import 'package:test4/chapter9/one.dart';
+import 'package:test4/chapter9/two.dart';
+import 'chapter2/one.dart';
+import 'package:test4/chapter3/one.dart';
+import 'package:test4/chapter3/two.dart';
 
+import 'chapter4/one.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -11,6 +28,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -24,7 +42,27 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      routes:{
+        "chapter21":(context) => Chapter21(),
+        "chapter22":(context) => Chapter22(),
+        "chapter31":(context) => Chapter31(),
+        "chapter32":(context) => Chapter32(),
+        "chapter41":(context) => Chapter41(),
+        "chapter42":(context) => Chapter42(),
+        "chapter51":(context) => Chapter51(),
+        "chapter52":(context) => Chapter52(),
+        "chapter61":(context) => Chapter61(),
+        "chapter62":(context) => Chapter62(),
+        "chapter71":(context) => Chapter71(),
+        "chapter72":(context) => Chapter72(),
+        "chapter81":(context) => Chapter81(),
+        "chapter82":(context) => Chapter82(),
+        "chapter91":(context) => Chapter91(),
+        "chapter92":(context) => Chapter92(),
+        "chapter111":(context) => Chapter111(),
+        "/":(context) => MyHomePage(title: 'Flutter Demo Home Page'), //注册首页路由
+      },
+
     );
   }
 }
@@ -48,23 +86,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
 
-  void _incrementCounter() {
-    setState(() {
-
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
+
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
@@ -91,21 +117,129 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            TextButton(
+              child: Text("chapter2-1"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter21");
+              },
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            TextButton(
+              child: Text("chapter2-2"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter22");
+              },
+            ),
+            TextButton(
+              child: Text("chapter3-1"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter31");
+              },
+            ),
+            TextButton(
+              child: Text("chapter3-2"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter32");
+              },
+            ),
+            TextButton(
+              child: Text("chapter4-1"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter41");
+              },
+            ),
+            TextButton(
+              child: Text("chapter4-2"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter42");
+              },
+            ),
+            TextButton(
+              child: Text("chapter5-1"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter51");
+              },
+            ),
+            TextButton(
+              child: Text("chapter5-2"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter52");
+              },
+            ),
+            TextButton(
+              child: Text("chapter6-1"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter61");
+              },
+            ),
+            TextButton(
+              child: Text("chapter6-2"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter62");
+              },
+            ),
+            TextButton(
+              child: Text("chapter7-1"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter71");
+              },
+            ),
+            TextButton(
+              child: Text("chapter7-2"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter72");
+              },
+            ),
+            TextButton(
+              child: Text("chapter8-1"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter81");
+              },
+            ),
+            TextButton(
+              child: Text("chapter8-2"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter82");
+              },
+            ),
+            TextButton(
+              child: Text("chapter9-1"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter91");
+              },
+            ),
+            TextButton(
+              child: Text("chapter9-2"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter92");
+              },
+            ),
+            TextButton(
+              child: Text("chapter11-1"),
+              onPressed: () {
+                //导航到新路由
+                Navigator.pushNamed(context, "chapter111");
+              },
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+
     );
   }
 }
